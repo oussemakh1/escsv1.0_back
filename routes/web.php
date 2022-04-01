@@ -26,6 +26,10 @@ $router->get('/show_Reservations/{id}','ReservationsController@show');
 $router->post('/update_Reservations/{id}','ReservationsController@update');
 $router->delete('/delete_Reservations{id}','ReservationsController@delete');
 
+$router->post('/insert_club','ClubController@store');
+$router->get('/show_club/{id}','ClubController@show');
+$router->post('/update_club/{id}','ClubController@update');
+$router->delete('/delete_club{id}','ClubController@delete');
 
 $router->group([
 

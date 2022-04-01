@@ -15,13 +15,11 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('president');
+            $table->string('fullname');
             $table->string('email');
             $table->string('password');
             $table->string('telephone');
-            $table->string('activite');
-            $table->date('date_creation');
-            $table->string('club_name')->unique();
+            $table->string('type');
             $table->timestamps();
         });
     }

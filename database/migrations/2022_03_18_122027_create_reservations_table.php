@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('materiel');
             $table->string('hour_start');
             $table->string('hour_end');
+            $table->string('isApproved');
             $table->unsignedBigInteger('user_id');
 
             $table->timestamps();
